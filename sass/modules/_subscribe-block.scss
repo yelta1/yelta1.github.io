@@ -1,0 +1,11 @@
+.subscribe-block {
+    width: 100%;
+    display: flex;
+    flex-flow: raw wrap;
+    justify-content: flex-start;    
+
+    & input {
+        flex: 1;
+        padding: 1.5rem;
+    }
+}

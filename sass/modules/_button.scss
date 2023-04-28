@@ -1,0 +1,29 @@
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #04b5e9;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: "Worksans-Bold";
+    padding: 1rem;
+
+    &--standard {
+        color: #04b5e9;
+        display: block;
+    }
+
+    &--blue {
+        background-color: #04b5e9;
+        color: white;
+        display: block;
+    }
+
+    &--small {
+        display: inline-block;
+    }
+
+    &--medium {
+        padding: 1.5rem;
+    }
+}

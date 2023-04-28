@@ -1,0 +1,44 @@
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.active {
+    border-bottom: 1px solid $color-black;
+}
+
+.u-margin-top-small {
+    margin-top: $gap-small;
+}
+
+.u-margin-top-large {
+    margin-top: $gap-large;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: $gap-small;
+}
+
+.u-margin-bottom-large {
+    margin-bottom: $gap-large;
+}
+
+.u-margin-top-extra-small {
+    margin-top: $gap-extra-small;
+}
+
+.u-padding-top-small {
+    padding-top: $gap-small;
+}
+
+.u-padding-top-medium {
+    padding-top: $gap-medium;
+}
+
+.u-padding-top-bottom-extra {
+    padding: $gap-extra-large 0 $gap-extra-large 0;
+}
+
+.u-padding-top-bottom-large {
+    padding: $gap-large 0 $gap-large 0;
+}

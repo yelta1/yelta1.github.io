@@ -1,0 +1,74 @@
+#main {
+    width: 100%;
+    max-width: 100rem;
+    display: flex;
+    flex-flow: column wrap;
+
+    .bottle-page-heading {
+        font-family: "Worksans-Semibold";
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 3.8rem;
+    }
+
+    .bottle-page-paragraph {
+        font-size: 1.5rem;  
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    & .products {
+        min-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        & figure {
+            font-size: 1.8rem;
+            font-family: "Worksans-Semibold";
+
+            &:not(:last-child) {
+                margin: 8rem 0 3rem 0;
+            }
+
+            & .bottle-price {
+                font-size: 1.5rem;
+                line-height: 2; 
+            }
+
+            & img {
+                width: 30rem;
+            }
+        }
+    }
+}   
+
+@media screen and (max-width: 1260px) {
+    #main {
+        & .products {
+            min-width: 1px;
+            width: 90%;
+            margin: 0 auto;    
+
+            & figure {
+
+                & img {
+                    width: 90%;    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main {
+        & .products {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+.last-figure {
+    display: none;
+}

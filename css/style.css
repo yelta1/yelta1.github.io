@@ -1,0 +1,600 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px */
+}
+
+body {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Worksans-Regular";
+  src: url(../fonts/WorkSans-Regular.ttf) format("truetype"), url(../fonts/WorkSans-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Worksans-Semibold";
+  src: url(../fonts/WorkSans-SemiBold.ttf) format("truetype"), url(../fonts/WorkSans-SemiBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Worksans-Bold";
+  src: url(../fonts/WorkSans-Bold.ttf) format("truetype"), url(../fonts/WorkSans-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Worksans-Medium";
+  src: url(../fonts/WorkSans-Medium.ttf) format("truetype"), url(../fonts/WorkSans-Medium.woff) format("woff");
+}
+body {
+  font-family: "Worksans-Regular";
+}
+
+.bottle-description {
+  font-family: "Worksans-Regular";
+  font-size: 1.5rem;
+  line-height: 2.6;
+}
+.bottle-description__heading {
+  font-family: "Worksans-Semibold";
+  font-size: 2.4rem;
+}
+.bottle-description__info {
+  text-align: center;
+}
+.bottle-description__buy {
+  font-family: "Worksans-Bold";
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+  .bottle-description {
+    font-size: 1.3rem;
+  }
+  .bottle-description__heading {
+    font-size: 2rem;
+  }
+  .bottle-description__buy {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 325px) {
+  .bottle-description h1 {
+    line-height: 1.6;
+  }
+}
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.active {
+  border-bottom: 1px solid black;
+}
+
+.u-margin-top-small {
+  margin-top: 2rem;
+}
+
+.u-margin-top-large {
+  margin-top: 12rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 12rem;
+}
+
+.u-margin-top-extra-small {
+  margin-top: 1rem;
+}
+
+.u-padding-top-small {
+  padding-top: 2rem;
+}
+
+.u-padding-top-medium {
+  padding-top: 5rem;
+}
+
+.u-padding-top-bottom-extra {
+  padding: 15rem 0 15rem 0;
+}
+
+.u-padding-top-bottom-large {
+  padding: 12rem 0 12rem 0;
+}
+
+#main {
+  max-width: 99rem;
+  margin: 0 auto;
+}
+
+.main-image {
+  width: 100%;
+}
+.main-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .main-image {
+    padding-top: 1rem;
+  }
+}
+.bottle-description {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.main-info {
+  width: 55%;
+  min-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: raw wrap;
+  justify-content: center;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.left-side .top-side img {
+  width: 42.6rem;
+}
+.left-side .bottom-side {
+  padding-top: 3rem;
+}
+.left-side .bottom-side img {
+  width: 52.3rem;
+}
+
+.right-side {
+  flex: 1;
+  line-height: 1.7;
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 4rem;
+}
+.right-side__top {
+  font-family: "Worksans-Semibold";
+}
+.right-side__heading {
+  font-size: 3.5rem;
+}
+.right-side__price {
+  font-size: 1.8rem;
+}
+.right-side__info {
+  font-size: 1.5rem;
+  font-family: "Worksans-Regular";
+  line-height: 2.2;
+}
+.right-side__middle .select-all-wrapper {
+  display: flex;
+  flex-flow: raw wrap;
+}
+.right-side__middle .select-all-wrapper .select-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+}
+.right-side__middle .select-all-wrapper .select-wrapper:first-child {
+  margin-right: 0.5rem;
+}
+.right-side__middle .select-all-wrapper .select-wrapper:last-child {
+  margin-left: 0.5rem;
+}
+.right-side__middle .select-all-wrapper .select-wrapper label {
+  font-size: 1.6rem;
+  font-family: "Worksans-Medium";
+}
+.right-side__middle .select-all-wrapper .select-wrapper select {
+  padding: 1rem;
+  border: 1px solid #04b5e9;
+  font-size: 1.65rem;
+  font-family: "Worksans-Regular";
+  margin-top: 0.6rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../img/dropdown.png") right/20px no-repeat #fff;
+  padding-right: 20px;
+}
+.right-side__bottom {
+  font-size: 1.6rem;
+  font-family: "Worksans-Regular";
+  margin-top: 8rem;
+  text-align: center;
+}
+.right-side__bottom .right-side__bottle-info {
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-info {
+    min-width: 1px;
+    width: 90%;
+  }
+
+  .right-side {
+    padding-left: 3rem;
+  }
+
+  .left-side .top-side img {
+    max-width: 100%;
+    flex-shrink: 2;
+  }
+  .left-side .bottom-side img {
+    max-width: 100%;
+    flex-shrink: 2;
+  }
+}
+@media screen and (max-width: 709px) {
+  .main-info {
+    flex-flow: column wrap;
+  }
+
+  .right-side {
+    padding-top: 3rem;
+  }
+
+  .bottle-description {
+    padding: 8rem 0 8rem 0 !important;
+  }
+
+  .right-side__bottom {
+    font-size: 1.4rem;
+  }
+}
+.bottle-main-info {
+  width: 55%;
+  min-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+.bottle-main-info__first {
+  display: flex;
+  flex-flow: raw wrap;
+}
+.bottle-main-info__second {
+  display: flex;
+  flex-flow: raw wrap;
+}
+.bottle-main-info .block--right {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+X .bottle-main-info .block--right img {
+  width: 45rem;
+}
+.bottle-main-info .block--left {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.bottle-main-info .block--left img {
+  width: 45rem;
+}
+.bottle-main-info .block__heading {
+  font-size: 2.5rem;
+  font-family: "Worksans-Semibold";
+  margin-bottom: 2rem;
+}
+.bottle-main-info .block__paragraph {
+  font-size: 1.9rem;
+  line-height: 1.5;
+}
+
+.bottle-main-info__second .block--right .block__heading {
+  align-self: flex-start;
+}
+.bottle-main-info__second .block--right a {
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 1100px) {
+  .bottle-main-info {
+    min-width: 1px;
+    width: 90%;
+  }
+
+  .block--right img {
+    width: 80% !important;
+  }
+  .block--left img {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 736px) {
+  .bottle-main-info {
+    min-width: 1px;
+    width: 90%;
+  }
+  .bottle-main-info .block__heading {
+    font-size: 2rem;
+    font-family: "Worksans-Semibold";
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
+  .bottle-main-info .block__paragraph {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .bottle-main-info__first {
+    flex-flow: column wrap;
+  }
+  .bottle-main-info__first .block--right {
+    order: -1;
+  }
+  .bottle-main-info__second {
+    flex-flow: column wrap;
+    margin-top: -5rem;
+  }
+
+  .block--right img {
+    width: 100% !important;
+  }
+  .block--left img {
+    width: 100% !important;
+  }
+
+  .right-side {
+    padding-left: 0rem;
+  }
+}
+@media screen and (max-width: 325px) {
+  .bottle-description {
+    text-align: center;
+  }
+}
+#main {
+  width: 100%;
+  max-width: 100rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+#main .bottle-page-heading {
+  font-family: "Worksans-Semibold";
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3.8rem;
+}
+#main .bottle-page-paragraph {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+#main .products {
+  min-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#main .products figure {
+  font-size: 1.8rem;
+  font-family: "Worksans-Semibold";
+}
+#main .products figure:not(:last-child) {
+  margin: 8rem 0 3rem 0;
+}
+#main .products figure .bottle-price {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+#main .products figure img {
+  width: 30rem;
+}
+
+@media screen and (max-width: 1260px) {
+  #main .products {
+    min-width: 1px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #main .products figure img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #main .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.last-figure {
+  display: none;
+}
+
+#main .about-us-block {
+  width: 80rem;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.8rem;
+}
+#main .about-us-block .about-us-info {
+  margin: 5.5rem 0 5.5rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #main .about-us-block {
+    width: 90%;
+  }
+}
+#header {
+  width: 100%;
+  padding: 2rem 0 2rem 0;
+}
+#header .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: raw wrap;
+  align-items: center;
+}
+#header .logo {
+  width: 13rem;
+}
+#header .nav-main {
+  flex: 1;
+}
+#header .nav-main__items {
+  display: flex;
+  justify-content: flex-end;
+}
+#header .nav-main__item {
+  display: inline-block;
+}
+#header .nav-main__item:not(:last-child) {
+  margin-right: 8rem;
+}
+#header .nav-main__item a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-family: "Worksans-Regular";
+  text-transform: uppercase;
+  letter-spacing: 1.7;
+}
+
+@media screen and (max-width: 700px) {
+  #header .wrapper {
+    width: 100%;
+    flex-flow: column wrap;
+  }
+
+  .nav-main {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  #header .nav-main__item:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+.footer {
+  background-color: #F2F2F2;
+  width: 100%;
+  margin-top: 20rem;
+}
+.footer__wrapper {
+  width: 47.5em;
+  margin: 0 auto;
+}
+.footer__top {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 7rem 0 7rem 0;
+}
+.footer__heading {
+  font-size: 2rem;
+  font-family: "Worksans-Semibold";
+  letter-spacing: 0.1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.footer__paragraph {
+  font-size: 1.4rem;
+  padding-bottom: 5rem;
+  font-family: "Worksans-Medium";
+  text-align: center;
+}
+
+.footer__bottom {
+  width: 100%;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 5rem 0 8rem 0;
+}
+
+.footer__helpful-links {
+  font-size: 1.6rem;
+  font-family: "Worksans-Medium";
+  margin-bottom: 2rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  margin: auto;
+}
+.footer__link:not(:last-child) {
+  padding-right: 1.7rem;
+}
+
+@media screen and (max-width: 500px) {
+  .footer__wrapper {
+    width: 95%;
+  }
+  .footer__heading {
+    font-size: 1.8rem;
+  }
+  .footer__paragraph {
+    font-size: 1.3rem;
+  }
+}
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #04b5e9;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: "Worksans-Bold";
+  padding: 1rem;
+}
+.btn--standard {
+  color: #04b5e9;
+  display: block;
+}
+.btn--blue {
+  background-color: #04b5e9;
+  color: white;
+  display: block;
+}
+.btn--small {
+  display: inline-block;
+}
+.btn--medium {
+  padding: 1.5rem;
+}
+
+.subscribe-block {
+  width: 100%;
+  display: flex;
+  flex-flow: raw wrap;
+  justify-content: flex-start;
+}
+.subscribe-block input {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

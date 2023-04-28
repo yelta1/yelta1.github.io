@@ -1,0 +1,22 @@
+#main {
+
+    & .about-us-block {
+        width: 80rem;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 1.8rem;
+
+        & .about-us-info {
+            margin: 5.5rem 0 5.5rem 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #main {
+
+        & .about-us-block {
+            width: 90%;
+        }
+    }
+}

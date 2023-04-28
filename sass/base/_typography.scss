@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Worksans-Regular";
+    src: url(../fonts/WorkSans-Regular.ttf) format('truetype'),
+         url(../fonts/WorkSans-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Worksans-Semibold";
+    src: url(../fonts/WorkSans-SemiBold.ttf) format('truetype'),
+         url(../fonts/WorkSans-SemiBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Worksans-Bold";
+    src: url(../fonts/WorkSans-Bold.ttf) format('truetype'),
+         url(../fonts/WorkSans-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Worksans-Medium";
+    src: url(../fonts/WorkSans-Medium.ttf) format('truetype'),
+         url(../fonts/WorkSans-Medium.woff) format('woff');
+}
+
+
+body {
+    font-family: "Worksans-Regular";
+}
+
+.bottle-description {
+    font-family: "Worksans-Regular";
+    font-size: 1.5rem;
+    line-height: 2.6;
+
+    &__heading {
+        font-family: "Worksans-Semibold";
+        font-size: 2.4rem;   
+    }
+
+    &__info {
+        text-align: center;
+    }
+
+    &__buy {
+        font-family: "Worksans-Bold";
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .bottle-description {
+        font-size: 1.3rem;
+
+        &__heading {
+            font-size: 2rem;
+        }
+
+        &__buy {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .bottle-description {
+
+        & h1 {
+            line-height: 1.6;
+        }
+    }
+}
