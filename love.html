@@ -17,24 +17,6 @@
         h1 {
             color: #6b2ed4;
         }
-        .question {
-            margin: 10px 0;
-            font-size: 1.2em;
-            color: #a19f9f;
-        }
-        .question button {
-            margin: 5px;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            background-color: #8b4ada;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-        }
-        .question button:hover {
-            background-color: #6b2ed4;
-        }
         #message {
             margin-top: 20px;
             font-size: 1.5em;
@@ -49,18 +31,6 @@
     <div id="message" style="display: none;">
         Я люблю тебя ботам менын, не грусти пожалуйста ❤️
     </div>
-
-    <script>
-        function nextQuestion(index) {
-            document.querySelectorAll('.question')[index - 1].style.display = 'none';
-            document.querySelectorAll('.question')[index].style.display = 'block';
-        }
-
-        function showMessage() {
-            document.getElementById('questions').style.display = 'none';
-            document.getElementById('message').style.display = 'block';
-        }
-    </script>
 
 </body>
 </html>
