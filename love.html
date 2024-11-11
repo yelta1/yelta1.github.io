@@ -13,14 +13,44 @@
             min-height: 100vh;
             font-family: Arial, sans-serif;
             background-color: #212120;
+            margin: 0;
+            padding: 0;
         }
         h1 {
             color: #6b2ed4;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
         }
         #message {
             margin-top: 20px;
             font-size: 1.5em;
             color: #a19f9f;
+            opacity: 0;
+            animation: fadeIn 4s ease-in-out forwards;
+            animation-delay: 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #photo {
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            #message {
+                font-size: 1.2em;
+            }
+            #photo {
+                width: 150px;
+                height: 150px;
+            }
         }
     </style>
 </head>
@@ -31,6 +61,8 @@
     <div id="message">
         Я люблю тебя ботам менын, не грусти пожалуйста ❤️
     </div>
+
+    <img id="photo" src="myebalo.jpg" alt="Твое фото">
 
 </body>
 </html>
