@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Любимые вопросы</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #212120;
+        }
+        h1 {
+            color: #6b2ed4;
+        }
+        .question {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #a19f9f;
+        }
+        .question button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #8b4ada;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        .question button:hover {
+            background-color: #6b2ed4;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #a19f9f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Привет, Након!</h1>
+    <div id="questions">
+        <div class="question">
+            <span>Ты знаешь, как сильно ты мне нравишься?</span>
+            <button onclick="nextQuestion(1)">Да</button>
+            <button onclick="nextQuestion(1)">Конечно</button>
+        </div>
+        <div class="question" style="display: none;">
+            <span>Хочешь узнать кое-что?</span>
+            <button onclick="nextQuestion(2)">Да конечно!</button>
+            <button onclick="nextQuestion(2)">Очень хочу!</button>
+        </div>
+        <div class="question" style="display: none;">
+            <span>Готова услышать, что у меня на сердце?</span>
+            <button onclick="nextQuestion(3)">Готова!</button>
+            <button onclick="nextQuestion(3)">Конечно!</button>
+        </div>
+        <div class="question" style="display: none;">
+            <span>А я тебе нравлюсь?</span>
+            <button onclick="nextQuestion(4)">Естесна!</button>
+            <button onclick="nextQuestion(4)">КАНЕШНА</button>
+        </div>
+        <div class="question" style="display: none;">
+            <span>Уверена что готова узнать это?</span>
+            <button onclick="nextQuestion(5)">ДАААА!</button>
+            <button onclick="nextQuestion(5)">Болш зайбал!</button>
+        </div>
+        <div class="question" style="display: none;">
+            <span>Ты у меня прекрасная и любимая моя😘</span>
+            <button onclick="showMessage()">Ты тоже</button>
+            <button onclick="showMessage()">Ахаааа</button>
+        </div>
+    </div>
+
+    <div id="message" style="display: none;">
+        Я люблю тебя ботам менын ❤️
+    </div>
+
+    <script>
+        function nextQuestion(index) {
+            document.querySelectorAll('.question')[index - 1].style.display = 'none';
+            document.querySelectorAll('.question')[index].style.display = 'block';
+        }
+
+        function showMessage() {
+            document.getElementById('questions').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
