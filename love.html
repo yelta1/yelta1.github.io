@@ -1,0 +1,46 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Любовь внутри</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f0ed;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 90%;
+            max-height: 90vh;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .hint {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <img id="image" src="IMG_3500.PNG" alt="Любовь внутри" onclick="changeImage()">
+    <div class="hint">Нажмите на картинку, чтобы продолжить</div>
+
+    <script>
+        function changeImage() {
+            document.getElementById('image').src = 'IMG_3501.PNG';
+            document.querySelector('.hint').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
