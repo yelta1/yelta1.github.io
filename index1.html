@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Card</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" onclick="toggleCard()">
+    <div class="envelope"></div>
+    <div class="card">
+      <h1 class="message">Менің валентинкам боласыңба?</h1>
+      <br>
+      <br>
+      <br>
+      <img width="90px" height="120px" src="men.jpg"/>
+    </div>
+    <div class="cover"></div>
+    <div class="lid"></div>
+    <div class="shadow"></div>
+  </div>
+  
+  <script>
+    function toggleCard() {
+      document.querySelector('.container').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
