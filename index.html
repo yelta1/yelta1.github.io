@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelta1 | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="gooey-container">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+    
+        <!-- SVG фильтр для "жидкости" -->
+        <svg>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" />
+                <feColorMatrix 
+                    in="blur" 
+                    mode="matrix"
+                    values="
+                    1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 25 -10"
+                    result="goo"
+                />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </svg>
+    </div>
+    
+    <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <header>
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/64255018?v=4">
+        <h1>Талгат Елнур</h1>
+        <div class="typing" id="typing"></div>
+    </header>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+        <div class="card">
+            Backend Dev / SysAdmin. Автоматизация, инфраструктура, мониторинг, CI/CD.
+        </div>
+
+        <div class="terminal">
+            $ whoami <br>
+            yelta1
+        </div>
+    </section>
+
+    <section>
+        <h2>Опыт</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <strong> GO разработчик | Alatau City Bank</strong><br>
+                01.2026 — 06.2026
+            </div>
+            <div class="timeline-item">
+                <strong> Админстратор/Эксперт Symantec DLP | Alatau City Bank</strong><br>
+                01.2026 — 06.2026
+            </div>
+            <div class="timeline-item">
+                <strong> Админстратор Colvir(АБИС) | Alatau City Bank</strong><br>
+                10.2025 — 12.2025
+            </div>
+            <div class="timeline-item">
+                <strong> Системный админстратор Windows | Kazakh-Russian Medical University</strong><br>
+                07.2025 — 10.2025
+            </div>
+            <div class="timeline-item">
+                <strong> Главный менеджер Service Desk | Jusan Bank</strong><br>
+                02.2025 — 07.2025
+            </div>
+            <div class="timeline-item">
+                <strong> Менеджер Service Desk | Jusan Bank</strong><br>
+                07.2024 — 02.2025
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>GitHub Проекты</h2>
+        <div class="grid grid-2" id="repos"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <div class="card">
+            Phone: +7 708 481-89-27<br>
+            Email: yelnurtalgat@gmail.com<br>
+            Telegram: @yelta1<br>
+            <a href="https://www.linkedin.com/in/yelta1" target="_blank">LinkedIn</a><br>
+            <a href="https://github.com/yelta1" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Yelta1
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
