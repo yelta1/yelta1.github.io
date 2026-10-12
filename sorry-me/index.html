@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Для тебя 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-hearts" id="bgHearts"></div>
+
+  <main class="card">
+    <!-- Старт -->
+    <section class="screen active" id="s-start">
+      <div class="emoji big">💌</div>
+      <h1 id="startTitle">Привет!</h1>
+      <p>Я знаю, что ты хотела поиграть… Поэтому я сделал для тебя целую игру 🎮</p>
+      <p class="small">3 уровня. В конце — приз.</p>
+      <button class="btn" data-next="s-catch">Начать квест ▶</button>
+    </section>
+
+    <!-- Уровень 1: поймай сердечки -->
+    <section class="screen" id="s-catch">
+      <div class="level">Уровень 1 / 3</div>
+      <h2>Поймай мои сердечки</h2>
+      <p class="small">Двигай корзинку пальцем или мышкой. Поймай <b id="goal"></b> 💖 и уворачивайся от 💔</p>
+      <div class="hud">
+        <span>💖 <b id="score">0</b></span>
+        <span>Жизни: <b id="lives">❤️❤️❤️</b></span>
+      </div>
+      <div class="field" id="field">
+        <div class="basket" id="basket">🧺</div>
+        <div class="overlay" id="overlay">
+          <p id="overlayMsg">Готова?</p>
+          <button class="btn" id="playBtn">Играть ▶</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Уровень 2: викторина -->
+    <section class="screen" id="s-quiz">
+      <div class="level">Уровень 2 / 3</div>
+      <h2 id="qTitle"></h2>
+      <div class="answers" id="answers"></div>
+      <p class="feedback" id="feedback"></p>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <!-- Уровень 3: простишь? -->
+    <section class="screen" id="s-forgive">
+      <div class="level">Уровень 3 / 3 · финальный босс</div>
+      <div class="emoji big">🥺</div>
+      <h2>Простишь меня за кино вместо игры?</h2>
+      <div class="forgive-zone" id="zone">
+        <button class="btn" id="yesBtn">Да 💖</button>
+        <button class="btn ghost" id="noBtn">Нет</button>
+      </div>
+      <p class="small" id="noText"></p>
+    </section>
+
+    <!-- Финал -->
+    <section class="screen" id="s-final">
+      <div class="emoji big">🏆</div>
+      <h2>Квест пройден!</h2>
+      <p class="letter" id="letter"></p>
+      <div class="coupon">
+        <div class="coupon-title">КУПОН</div>
+        <div id="couponText"></div>
+        <div class="small">Срок действия: бессрочно</div>
+      </div>
+      <button class="btn ghost" id="again">Пройти ещё раз</button>
+    </section>
+  </main>
+
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
