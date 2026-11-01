@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Приглашение для Након</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Oswald:wght@500;700&family=Manrope:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div id="hearts" aria-hidden="true"></div>
+
+<main>
+  <section class="envelope" id="env">
+    <div class="seal">Н</div>
+    <div class="to">Лично в руки</div>
+    <h1>Након,</h1>
+    <p>у меня для тебя есть одно маленькое приглашение на сегодняшний вечер.</p>
+    <button class="btn btn-open" id="openBtn">Открыть письмо</button>
+  </section>
+
+  <section id="letter" hidden>
+    <p class="note">Назерке, сегодня я хочу украсть тебя на целый вечер: <b>дорога, кино и ужин</b>, только ты и я.
+      <span class="sign">— твой Талгат</span></p>
+
+    <div class="ticket" role="group" aria-label="Билет в кино">
+      <div class="t-main">
+        <div class="t-kicker">Кино · Алматы · 1992 → 2026</div>
+        <div class="t-title">Заман<span>back</span> 2</div>
+        <div class="t-sub">Два места рядом. Попкорн за мной.</div>
+      </div>
+      <div class="t-stub">
+        <div class="t-time">19:30</div>
+        <div class="t-date">1 ноября</div>
+        <div class="t-adm">2 билета</div>
+      </div>
+    </div>
+
+    <div class="plan">
+      <h2>План нашего вечера</h2>
+      <ol>
+        <li><div class="when">15:00</div><div class="what"><strong>Выезжаем из села</strong><small>Где-то в 15:00–15:30, без спешки.</small></div></li>
+        <li><div class="when">в пути</div><div class="what"><strong>Дорога и разговоры</strong><small>Музыка, окна, болтаем обо всём.</small></div></li>
+        <li><div class="when">19:00</div><div class="what"><strong>Приезжаем в город</strong><small>Как раз успеваем к сеансу.</small></div></li>
+        <li class="hi"><div class="when">19:30</div><div class="what"><strong>Кино «Заманback 2»</strong><small>Билеты уже куплены, отказы не принимаются.</small></div></li>
+        <li><div class="when">после</div><div class="what"><strong>Ужин вдвоём</strong><small>Перекусим бургерами и обсудим фильм.</small></div></li>
+      </ol>
+    </div>
+
+    <div class="food">
+      <div class="logo">ONNAN ON<i>OTANDYQ DÁM</i></div>
+      <p><b>Onnan On</b>, Коктем-1, 16.<br>Говорят, бургеры там 10 из 10. Проверим вместе.</p>
+    </div>
+
+    <div class="ask" id="ask">
+      <h3>Ты пойдёшь со мной?</h3>
+      <p>Выбери честно 🙂</p>
+      <div class="choices" id="choices">
+        <button class="btn btn-yes" id="yesBtn">Да ❤</button>
+        <button class="btn btn-no" id="noBtn">Нет</button>
+      </div>
+    </div>
+
+    <div id="yes" hidden>
+      <h3>Ура! Это свидание</h3>
+      <p>Тогда в 15:00 будь готова. Остальное я беру на себя.</p>
+      <div class="kz">Сені жақсы көремін</div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
