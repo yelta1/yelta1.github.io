@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для Након 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <main class="card">
+    <!-- 0. Конверт -->
+    <section class="step active" data-step="0">
+      <div class="envelope" id="envelope">💌</div>
+      <h1>Након, тебе письмо</h1>
+      <p class="muted">Нажми на конверт</p>
+    </section>
+
+    <!-- 1. Главный вопрос -->
+    <section class="step" data-step="1">
+      <div class="big-emoji">🥺</div>
+      <h1>Пойдёшь со мной на свидание?</h1>
+      <p class="date">Среда, 4 ноября 2026</p>
+      <div class="buttons" id="askButtons">
+        <button class="btn yes" id="yesBtn">Да! 💖</button>
+        <button class="btn no" id="noBtn">Нет</button>
+      </div>
+    </section>
+
+    <!-- 2. Сможешь приехать после учёбы -->
+    <section class="step" data-step="2">
+      <div class="big-emoji">🎒➡️🏢</div>
+      <h2>Ураа! Тогда первый вопрос</h2>
+      <p>У тебя в этот день учёба до <b>17:00</b>, а я выхожу с работы в <b>18:00</b>.</p>
+      <p>Сможешь после учёбы приехать ко мне на работу?</p>
+      <div class="buttons">
+        <button class="btn yes" data-arrive="yes">Да, приеду 🚕</button>
+        <button class="btn soft" data-arrive="no">Не получится 😔</button>
+      </div>
+      <p class="hint" id="arriveHint" hidden>Ничего страшного! Нажми «Дальше», а время и место встречи обсудим 💬</p>
+      <button class="btn ghost" id="arriveNext" hidden>Дальше →</button>
+    </section>
+
+    <!-- 3. Прогулка -->
+    <section class="step" data-step="3">
+      <div class="big-emoji">🍂🚶‍♂️🚶‍♀️</div>
+      <h2>Сначала — прогулка</h2>
+      <p>Я выхожу в 18:00, и мы вместе идём гулять по аллее рядом. Осень, фонари, только мы вдвоём.</p>
+      <button class="btn yes" data-next>Звучит отлично →</button>
+    </section>
+
+    <!-- 4. Где покушаем -->
+    <section class="step" data-step="4">
+      <div class="big-emoji">🍜</div>
+      <h2>Потом покушаем. Выбирай!</h2>
+      <div class="choices">
+        <button class="choice" data-food="cu">
+          <span class="choice-emoji">🏪</span>
+          <span class="choice-title">CU</span>
+          <span class="choice-sub">раменчик + кимпаб, прямо как в дорамах</span>
+        </button>
+        <button class="choice" data-food="ksf">
+          <span class="choice-emoji">🥢</span>
+          <span class="choice-title">Korean Street Food</span>
+          <span class="choice-sub">пр. Абылай хана, 59/61 — напротив ЦУМа</span>
+          <a class="map-link" href="https://2gis.kz/almaty/search/Korean%20Street%20Food%20%D0%90%D0%B1%D1%8B%D0%BB%D0%B0%D0%B9%20%D1%85%D0%B0%D0%BD%D0%B0%2059" target="_blank" rel="noopener">открыть в 2ГИС ↗</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- 5. Машина + фильм -->
+    <section class="step" data-step="5">
+      <div class="big-emoji">🚗🎬🍿</div>
+      <h2>И напоследок…</h2>
+      <p>Едем в сторону твоего дома, сидим в машине и смотрим кое-что вместе.</p>
+      <p>Фильм или сериал? Что именно — секрет, выберу по настроению 🤫</p>
+      <div class="buttons">
+        <button class="btn yes" data-watch="фильм">Фильм 🎞️</button>
+        <button class="btn yes" data-watch="сериал">Сериал 📺</button>
+        <button class="btn soft" data-watch="на твой выбор">Удиви меня ✨</button>
+      </div>
+    </section>
+
+    <!-- 6. Итог -->
+    <section class="step" data-step="6">
+      <div class="big-emoji">💞</div>
+      <h2>Это свидание!</h2>
+      <ul class="plan" id="plan"></ul>
+      <button class="btn yes" id="sendBtn">Отправить ответ 💌</button>
+      <p class="muted small">Жду не дождусь ❤️</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
